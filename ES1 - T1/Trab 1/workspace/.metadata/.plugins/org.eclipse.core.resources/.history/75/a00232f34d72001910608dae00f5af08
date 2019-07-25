@@ -1,0 +1,45 @@
+package endereço;
+
+import bairro.Bairro;
+import cidade.Cidade;
+import logradouro.Logradouro;
+
+public class Endereço {
+
+	private int idEndereço;
+	private int CPF;
+	private Logradouro idLogradouro;
+	private Bairro idBairro;
+	private Cidade idCidade;
+	public int getIdEndereço() {
+		return idEndereço;
+	}
+	public void setIdEndereço(int idEndereço) {
+		this.idEndereço = idEndereço;
+	}
+	public int getCPF() {
+		return CPF;
+	}
+	public void setCPF(int cPF) {
+		CPF = cPF;
+	}
+	public Logradouro getIdLogradouro() {
+		return idLogradouro;
+	}
+	public void setIdLogradouro(Logradouro idLogradouro) {
+		this.idLogradouro = idLogradouro;
+	}
+	public Bairro getIdBairro() {
+		return idBairro;
+	}
+	public void setIdBairro(Bairro idBairro) {
+		this.idBairro = idBairro;
+	}
+	public Cidade getIdCidade() {
+		return idCidade;
+	}
+	public void setIdCidade(Cidade idCidade) {
+		this.idCidade = idCidade;
+	}
+	
+}

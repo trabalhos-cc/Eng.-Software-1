@@ -1,0 +1,47 @@
+package unioeste.gestão.UC_inserirProduto;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import connect.Connect;
+
+
+public class UC_InserirProduto {
+
+	protected ResultSet result = null;
+	protected Statement st = null;
+	protected String mensagem;
+	
+	public void inserirProduto(String nomeProduto, float valorPago, float valorCusto)throws Exception{
+		
+		StringBuilder sql = new StringBuilder();
+		
+		sql.append("insert into produto (nomeProduto, valoProduto, valorCusto)");
+		sql.append("values (?,?,?) ");
+		
+		Connection conn = Connect.toConnect(mensagem);
+		System.out.println(mensagem);
+		
+		st = conn.createStatement();
+		
+		PreparedStatement comando = conn.prepareStatement(sql.toString());
+		comando.setString(1, nomeProduto);
+		comando.setFloat(2, valorPago);
+		comando.setFloat(3, valorCusto);
+		comando.executeUpdate();
+	
+		comando.close();
+		conn.close();
+	}
+	
+	public void main() {
+		try {
+			this.inserirProduto("perfume", 2.5, 1.2);
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		
+	}
+}

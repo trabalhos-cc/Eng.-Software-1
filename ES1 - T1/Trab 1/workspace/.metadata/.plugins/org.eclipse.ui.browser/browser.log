@@ -1,0 +1,15 @@
+
+mai 10, 2019 08:01:14.60 NEW SESSION
+mai 10, 2019 08:01:14.60 [17008:29792:0510/070114.523:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+mai 10, 2019 08:01:15.02 [17008:31492:0510/070115.023:ERROR:browser_process_sub_thread.cc(217)] Waited 66 ms for network service
+mai 10, 2019 08:06:02.27 [6468:17752:0510/070602.270:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+mai 10, 2019 08:51:48.44 [6468:28412:0510/075148.446:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -106
+mai 10, 2019 13:26:08.51 [6468:17752:0510/132608.515:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+mai 10, 2019 13:26:12.01 [6468:28412:0510/132608.577:ERROR:socket_stream.cc(219)] Closing stream with result -2
+mai 10, 2019 13:26:12.01 [6468:28412:0510/132608.593:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -105
+mai 10, 2019 13:26:12.01 [6468:17188:0510/132610.121:ERROR:get_updates_processor.cc(245)] PostClientToServerMessage() failed during GetUpdates
+mai 10, 2019 13:26:12.01 [6468:28412:0510/132610.653:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -106
+mai 10, 2019 13:26:16.14 [6468:17188:0510/132616.143:ERROR:get_updates_processor.cc(245)] PostClientToServerMessage() failed during GetUpdates
+mai 10, 2019 13:26:18.49 [6468:17188:0510/132618.492:ERROR:get_updates_processor.cc(245)] PostClientToServerMessage() failed during GetUpdates
+mai 10, 2019 21:03:39.66 [6468:17752:0510/210339.669:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+mai 10, 2019 21:03:44.94 [6468:28412:0510/210344.942:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -21

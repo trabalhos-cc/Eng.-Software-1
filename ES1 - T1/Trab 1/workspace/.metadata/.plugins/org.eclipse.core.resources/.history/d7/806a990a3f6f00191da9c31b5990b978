@@ -1,0 +1,33 @@
+package connect;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Connect {
+	
+	
+	public static Connection toConnect(String Mensagem) throws Exception{
+		Connection conn = null;
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			
+			conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/identificadorproduto", "root", "root");
+			
+			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy hh:mm"); 
+			if(conn != null) {
+				Mensagem = "Banco de Dados conectado as " + sdf.format(new Date());
+			}
+		}catch(Exception e) {
+			System.out.println(e);
+			Mensagem = "Não foi possivel conectar ao Banco de Dados!";
+		}
+		return conn;
+	}
+	
+	public static Connection toDisconnect(String Mensagem) throws Exception{
+		return null;
+	} 
+}

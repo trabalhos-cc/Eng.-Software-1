@@ -1,0 +1,14 @@
+package unioeste.gestão.UC_inserirProduto;
+
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class UC_InserirProduto {
+
+	protected ResultSet result = null;
+	protected Statement st = null;
+	
+	public list <Produto> inserirProduto()throws Exception{
+		
+	}
+}

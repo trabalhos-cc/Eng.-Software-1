@@ -1,0 +1,5 @@
+package unioeste.gestão.Manager;
+
+public class UC_ManterProdutoManager {
+
+}

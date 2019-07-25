@@ -1,0 +1,17 @@
+/*package connect;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+public class main {
+	
+	public static void Main () throws SQLException{
+		String mensagem = null;
+		Connection conn = Connect.toConnect(mensagem);
+		if(conn != null)
+			System.out.println(mensagem);
+		Connect.toDisconnect();
+	}
+
+}
+*/

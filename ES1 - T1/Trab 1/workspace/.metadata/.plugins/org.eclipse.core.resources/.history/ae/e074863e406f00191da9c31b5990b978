@@ -1,0 +1,12 @@
+package connect;
+
+public class main {
+	
+	public static void main () throws Exception{
+		String mensagem = null;
+		Connect.toConnect(mensagem);
+		System.out.println(mensagem);
+		Connect.toDisconnect();
+	}
+
+}

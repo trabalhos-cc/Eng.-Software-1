@@ -1,0 +1,55 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1> BOTICÁRIO</h1>
+	
+	<jsp:forward page = "iniciando.jsp"/>
+	
+	
+</body>
+</html>
+
+<!--  CAIXA COM CAMPO PARA DIGITAR! 
+form action="iniciando.jsp">
+	<input type = "text" id = "nome" name = "nome">
+	<input type = "submit" value="Enviar"/>
+	</form>
+	% session.setAttribute("titulo1", "titulo2"); %>	
+-->
+
+<!--  INCLUDE - 
+	inclue páginas uma dentro da outra.  
+	
+	incluindo pagina testando.jsp em index.jsp 
+	em testando jsp: 
+		<html>
+			<h3> Essa página está sendo incluida</h3>
+		</html>
+	em index.jsp:
+		%@ include file = "testando.jsp" %>
+-->
+
+
+<!-- PÁGINA DE ERRO 
+	em index.jsp:
+	%@ page errorPage = "iniciando.jsp" %>  [<-exemplo]
+	%= 100/0%> [<- isso no Java dá um erro]
+	
+	em iniciando.jsp:
+	%@ page isErrorPage = "true" %>
+	% execption %>
+ -->
+
+<!-- "%= application.getInitParameter("titulo") %>
+<br>
+%= application.getInitParameter("titulo1") %>  -->
+
+<!--%=
+"Nome recebido:" + request.getParameter("nome")
+%>  -->
