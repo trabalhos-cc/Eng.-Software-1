@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Prontuário_Paciente</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/index.css">
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <script src="js/prontuario_Paciente.js"></script>
+
+    </head>
+    
+    <body>
+        <div class="w3-top scroll tam_div">
+            <div class="w3-bar w3-green w3-card w3-large">
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+                <a href="" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Prontuário do Paciente</a>
+                <a href="manter_Paciente.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Cadastrar Paciente</a>
+            </div>
+
+            <header class="w3-container w3-white w3-large" id="formulario_med">
+                <div class="tam_div">
+
+                    <div class="w3-green">
+                        <h1> Prontuário do Paciente </h1>
+                    </div>
+
+                    <form id="form2" method="GET">
+                        <div class="w3-container w3-border" id="dados_pac">
+
+                            <label for="cod_pac">Cod. Paciente:_____ </label>
+
+                            <label for="nome">Nome Paciente:_______________ </label> 
+
+                            <label for="cpf">CPF:__________</label><br>
+
+                            <label for="end">Endereço: </label> 
+
+                            <label for="cep">CEP:______________ </label> 
+
+                            <label for="rua_casa">Rua:_____ </label> 
+
+                            <label for="nro_casa">Número:_____ </label> 
+
+                            <label for="bairro">Bairro:__________ </label><br>  
+
+                            <label for="cidade">Cidade:_______________ </label> 
+
+                            <label for="uf">UF:_____ </label>  
+
+                            <label for="compl">Complemento:__________ </label><br>  
+
+                            <label>Fone(s):</label>
+                            <input type="tel" name="tele1"> , 
+                            <input type="tel" name="tele2"> ,
+                            <input type="tel" name="tele3"><br>
+
+                            <label for="email">Email(s):____________________, ____________________ </label>
+
+                            <label for="dt_nasc">Data de Nascimento:_______________ </label>
+
+                            <label>Sexo:_____</label>
+
+                        </div>
+
+                </div>
+
+                <div class="tam_div">
+
+                    <div>
+                        <div class="w3-green">
+                            <h1> Consultas Realizadas </h1>
+                        </div>
+                    </div>
+
+                    <div class="w3-container" id="consult_realizadas">
+
+                        <table id="consultas" align="center" cellpadding="5px">
+
+                            <tr class="w3-green">
+                                <th>Data de Consulta </th>
+                                <th>Tipo da Consulta </th>
+                                <th>CID Consulta </th>
+                                <th>Nome Médico </th>
+                                <th>CRM Médico </th>
+                            </tr> 
+                            <tr>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                            </tr>
+                            <tr>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                            </tr>
+                            <tr>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                            </tr> 
+                        </table> 
+
+                    </div>
+
+                </div>
+
+                <div class="tam_div">
+
+                    <div class="w3-green">
+                        <h1> Consultas Realizadas </h1>
+                    </div>
+
+                    <div class="w3-container" id="exames_realizadas w3-center">
+
+                        <table id="exames" align="center" cellpadding="5px">
+
+                            <tr class="w3-green">
+                                <th>Data do Exame </th>
+                                <th>Tipo do Exame </th>
+                                <th>Resultado </th>
+                            </tr> 
+                            <tr>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                            </tr> 
+                            <tr>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                            </tr>
+                            <tr>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                            </tr>    
+
+                        </table> 
+
+                    </div>
+
+                    <div class="w3-green">
+                        <h1> Remédios Prescritos (receitados)</h1>
+                    </div>
+
+                </div>
+
+                <div>
+                    <div class="w3-container" id="remed_prescrito w3-center">
+
+                        <table id="remedios" align="center" cellpadding="5px">
+
+                            <tr class="w3-green">
+                                <th>Data </th>
+                                <th>Remédio </th>
+                                <th>Posologia(forma de uso) </th>
+                            </tr> 
+                            <tr>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                            </tr> 
+                            <tr>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                            </tr>
+                            <tr>
+                                <td>___________</td>
+                                <td>___________</td>
+                                <td>___________</td>
+                            </tr>    
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+                </form>
+
+            </header>
+
+        </div>
+        
+    </body>
+</html>

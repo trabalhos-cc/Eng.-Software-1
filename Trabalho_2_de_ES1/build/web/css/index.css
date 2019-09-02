@@ -12,17 +12,35 @@ h1{
     text-align: center;
 }
 
-#formulario_med{
-    background: lightblue;
+.scroll{
+    width: 100%;
+    overflow-y: scroll;
+    position: relative;
+    height: 100%;
+    color: green;
 }
 
-div{
+table{
+    border-collapse: collapse;
+} 
+
+table, th, td{
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.tam_div{
     width: 80%;
     margin: 0 auto;
 }
 
+.hidden{
+    display:none;
+}
+
 form input{
-    margin-left: auto;
+    margin: auto auto 3px auto;
     padding: auto;
     outline: none;
 }
@@ -33,6 +51,13 @@ form input{
 
 input{
     border:none;
-    background: lightblue;
     border-bottom: solid 1px black;
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans-serif;
+}
+
+.w3-bar,h1,button {
+    font-family: "Montserrat", sans-serif;
 }

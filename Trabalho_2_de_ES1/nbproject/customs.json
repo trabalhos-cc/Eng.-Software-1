@@ -1,6 +1,11 @@
 {
     "elements": {
-        "div": {}
+        "div": {
+            "attributes": {
+                "id": {},
+                "class": {}
+            }
+        }
     },
     "attributes": {}
 }
