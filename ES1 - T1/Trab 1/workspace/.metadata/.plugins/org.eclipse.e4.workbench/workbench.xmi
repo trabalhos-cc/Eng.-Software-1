@@ -683,7 +683,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_VIYwYHJ5Eemr0P7-B_oUKw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_jLQx4Hu0EemjtrrSQyrCng" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_VIkXLnJ5Eemr0P7-B_oUKw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_rK5LYMCTEemNXfZvUORIzg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_VIkXLnJ5Eemr0P7-B_oUKw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_VIYwbnJ5Eemr0P7-B_oUKw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -719,7 +719,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_VIYwxXJ5Eemr0P7-B_oUKw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_jLai43u0EemjtrrSQyrCng" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_VIkW0XJ5Eemr0P7-B_oUKw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_rK-D4MCTEemNXfZvUORIzg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_VIkW0XJ5Eemr0P7-B_oUKw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_VIYwz3J5Eemr0P7-B_oUKw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1429,6 +1429,7 @@
     <bindings xmi:id="_iUL_8Hu0EemjtrrSQyrCng" keySequence="CTRL+SHIFT+F" command="_iSjBNnu0EemjtrrSQyrCng"/>
     <bindings xmi:id="_iUL_8Xu0EemjtrrSQyrCng" keySequence="ALT+CTRL+H" command="_iSjBOHu0EemjtrrSQyrCng"/>
   </bindingTables>
+  <bindingTables xmi:id="_q4nvocCTEemNXfZvUORIzg" bindingContext="_q4nvoMCTEemNXfZvUORIzg"/>
   <rootContext xmi:id="_VIbzs3J5Eemr0P7-B_oUKw" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs and Windows" description="Either a dialog or a window is open">
     <children xmi:id="_VIbztHJ5Eemr0P7-B_oUKw" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.platform" name="In Windows" description="A window is open">
       <children xmi:id="_VIbztXJ5Eemr0P7-B_oUKw" elementId="org.eclipse.e4.ui.contexts.views" contributorURI="platform:/plugin/org.eclipse.platform" name="%bindingcontext.name.bindingView"/>
@@ -1560,6 +1561,7 @@
   <rootContext xmi:id="_VIb0KnJ5Eemr0P7-B_oUKw" elementId="org.jboss.ide.eclipse.archives.ui.actions.Archives" name="Auto::org.jboss.ide.eclipse.archives.ui.actions.Archives"/>
   <rootContext xmi:id="_VIb0K3J5Eemr0P7-B_oUKw" elementId="org.jboss.tools.jst.web.ui.server.actionSet" name="Auto::org.jboss.tools.jst.web.ui.server.actionSet"/>
   <rootContext xmi:id="_VIb0LHJ5Eemr0P7-B_oUKw" elementId="org.jboss.tools.jmx.ui.MBeanActionSet" name="Auto::org.jboss.tools.jmx.ui.MBeanActionSet"/>
+  <rootContext xmi:id="_q4nvoMCTEemNXfZvUORIzg" elementId="org.eclipse.egit.ui.SearchActionSet" name="Auto::org.eclipse.egit.ui.SearchActionSet"/>
   <descriptors xmi:id="_VIb0LXJ5Eemr0P7-B_oUKw" elementId="org.eclipse.e4.ui.compatibility.editor" allowMultiple="true" category="org.eclipse.e4.primaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor">
     <tags>Editor</tags>
   </descriptors>
@@ -3533,6 +3535,10 @@
   <commands xmi:id="_iSjBPHu0EemjtrrSQyrCng" elementId="sf.eclipse.javacc.foldingcollapse" commandName="Collapse the folding where the cursor is" description="Collapse the folding where the cursor is" category="_iSjBMXu0EemjtrrSQyrCng"/>
   <commands xmi:id="_iSjBPXu0EemjtrrSQyrCng" elementId="sf.eclipse.javacc.extcompile" commandName="Compile with javacc | jjtree | jtb" description="Compile with javacc | jjtree | jtb" category="_iSjBMXu0EemjtrrSQyrCng"/>
   <commands xmi:id="_iSjBPnu0EemjtrrSQyrCng" elementId="sf.eclipse.javacc.comment" commandName="Toggle comment" description="Comment selection's lines" category="_iSjBMXu0EemjtrrSQyrCng"/>
+  <commands xmi:id="_p-FaAcCTEemNXfZvUORIzg" elementId="org.eclipse.egit.ui.team.Revert" commandName="Revert Commit" category="_VInY_XJ5Eemr0P7-B_oUKw"/>
+  <commands xmi:id="_p-FaAsCTEemNXfZvUORIzg" elementId="org.eclipse.egit.ui.RepositoriesViewShowInSystemExplorer" commandName="Show In System Explorer" category="_VInY_XJ5Eemr0P7-B_oUKw"/>
+  <commands xmi:id="_p-FaA8CTEemNXfZvUORIzg" elementId="org.eclipse.egit.ui.team.CherryPick" commandName="Cherry Pick" category="_VInY_XJ5Eemr0P7-B_oUKw"/>
+  <commands xmi:id="_q3j_sMCTEemNXfZvUORIzg" elementId="AUTOGEN:::org.eclipse.egit.ui.SearchActionSet/org.eclipse.egit.ui.actions.OpenCommitSearchPage" commandName="Git..." category="_VInY6HJ5Eemr0P7-B_oUKw"/>
   <addons xmi:id="_VInYwXJ5Eemr0P7-B_oUKw" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_VInYwnJ5Eemr0P7-B_oUKw" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_VInYw3J5Eemr0P7-B_oUKw" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
