@@ -5,7 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.util.ArrayList;
-import org.apache.tomcat.dbcp.dbcp2.BasicDataSource;
+
+import org.apache.tomcat.dbcp.dbcp.BasicDataSource;
 
 public class ConexaoBD {
 		
