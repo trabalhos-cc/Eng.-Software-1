@@ -41,6 +41,14 @@ public class UCHomeBankGeralServicos {
 	}
 	
 	@GET
+	@Path("/teste")
+	@Produces(MediaType.APPLICATION_JSON)
+	public String teste() {
+		return "HEllo World!";
+	}
+	
+	
+	@GET
 	@Path("/consultarExtatoConta/{consultado}/{docFav}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public ArrayList<String> consultarExtratoConta(@PathParam("consultado")String consultado,
