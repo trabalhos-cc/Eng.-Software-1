@@ -12,8 +12,7 @@ import javax.servlet.http.HttpSession;
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 
-import unioeste.geral.homebank.servicos.HomeBank;
-import unioeste.geral.homebank.servicos.ServicoHomeBank;;
+import unioeste.geral.homebank.servicos.HomeBank;;
 /**
  * Servlet implementation class ConsultaExtrato
  */

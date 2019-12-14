@@ -17,7 +17,6 @@ import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 
 import unioeste.geral.homebank.servicos.HomeBank;
-import unioeste.geral.homebank.servicos.ServicoHomeBank;
 
 /**
  * Servlet implementation class TransferenciaBancaria
