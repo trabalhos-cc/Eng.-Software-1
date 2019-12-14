@@ -2,7 +2,7 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/Gabriel/Documents/GitHub/Eng.-Software-1/Trabalho 3/MyInfraPool.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Gabriel/Documents/GitHub/Eng.-Software-1/Trabalho 3/MyHomeBankBO.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Documents/GitHub/Eng.-Software-1/Trabalho 3/MyInfraPool.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

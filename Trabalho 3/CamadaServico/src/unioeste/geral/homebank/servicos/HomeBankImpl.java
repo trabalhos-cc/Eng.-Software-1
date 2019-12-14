@@ -7,7 +7,7 @@ import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 
-import unioeste.geral.homebank.manager.UCHomeBankGeralServicos;
+import unioeste.geral.homebank.resource.UCHomeBankGeralServicos;
 
 @WebService(endpointInterface="unioeste.geral.homebank.servicos.HomeBank")
 public class HomeBankImpl implements HomeBank{

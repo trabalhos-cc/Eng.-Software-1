@@ -14,10 +14,10 @@ public class ConexaoBD {
 	
 	static {
 		
-		bd.setDriverClassName("com.mysql.cj.jdbc.Driver");
+		bd.setDriverClassName("com.mysql.jdbc.Driver");
 		bd.setUrl("jdbc:mysql://localhost:3306/homebank?useTimezone=true&serverTimezone=UTC");
 		bd.setUsername("root");
-		bd.setPassword("Guilherme1702");
+		bd.setPassword("root");
 		bd.setMinIdle(3);
 		bd.setMaxIdle(15);
 		bd.setMaxOpenPreparedStatements(150);
