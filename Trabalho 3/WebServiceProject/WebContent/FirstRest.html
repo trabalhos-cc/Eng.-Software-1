@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My First Rest Call</title>
+<script>src = "/WebServiceProject/jquery-3.4.1.js"</script>
+</head>
+<body>
+<form>
+	<input type="text" id="meucep"/><input type = "button" value="buscar" onclick="procuraMeuCep();"/>
+	<br/>
+	<input type = "button" value="enviar" onclick="return enviaMeuCep();"/>
+	<br/>
+</form>
+	<table border = "1"> 
+		<tr>
+			<td>CEP</td>
+			<td><span id="theCep"></span></td>
+		</tr>
+		<tr>
+			<td>Rua</td>
+			<td><span id="theRua"></span></td>
+		</tr>
+		<tr>
+			<td>Numero</td>
+			<td><span id="theNumero"></span></td>
+		</tr>
+		<tr>
+			<td>Bairro</td>
+			<td><span id="theBairro"></span></td>
+		</tr>
+		<tr>
+			<td>Uf</td>
+			<td><span id="theUf"></span></td>
+		</tr>
+	</table>
+
+<script> 
+function enviaMeuCep(){
+	$.ajax({
+		url:"http://localhost:8080/WebServiceProject/webservice/CepRest/setCep/",
+		method: "POST",
+		contentType: "application/json",
+		data: myData,
+		dataType: JSON.stringify({"bairro":"Bairro -1208485251","cep":"85851210","numero":671286063,"rua":"Rua que sempre -1444531733","uf":"PR"})
+
+	})
+	.done(function(data){
+		alert("Enviado com sucesso!");
+	});
+}
+function procuraMeuCep(){
+	var txtMeuCep = $("#meucep").val();
+	var resptheCep = $("#theCep");
+	var resptheRua = $("#theRua");
+	var resptheNumero = $("#theNumero");
+	var resptheBairro = $("#theBairro");
+	var resptheUf = $("#theUf");
+	
+	$.ajax("http://localhost:8080/WebServiceProject/webservice/CepRest/getCep/"+txtMeuCep)
+	.done(function(data){
+		resptheCep.html(data.cep);
+		resptheRua.html(data.rua);
+		resptheNumero.html(data.numero);
+		resptheBairro.html(data.bairro);
+		resptheUf.html(data.uf);
+	})
+	.fail(function(){
+		alert("Error");
+	})
+}
+$(document).ready(function(){});
+</script>
+</body>
+</html>
