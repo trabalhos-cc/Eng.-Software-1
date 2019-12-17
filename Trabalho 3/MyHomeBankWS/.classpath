@@ -15,5 +15,21 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry exported="true" kind="lib" path="WebContent/WEB-INF/lib/MyHomeBankBO.jar"/>
 	<classpathentry exported="true" kind="lib" path="WebContent/WEB-INF/lib/MyInfraPool.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Documents/GitHub/Eng.-Software-1/Trabalho 3/commons-dbcp-1.2.2.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/gson-2.8.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jersey-json-1.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Documents/GitHub/Eng.-Software-1/Trabalho 3/jaxrs-ri/lib/jersey-client.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Documents/GitHub/Eng.-Software-1/Trabalho 3/jaxrs-ri/lib/jersey-common.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Documents/GitHub/Eng.-Software-1/Trabalho 3/jaxrs-ri/lib/jersey-container-servlet.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Documents/GitHub/Eng.-Software-1/Trabalho 3/jaxrs-ri/lib/jersey-container-servlet-core.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Documents/GitHub/Eng.-Software-1/Trabalho 3/jaxrs-ri/lib/jersey-hk2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Documents/GitHub/Eng.-Software-1/Trabalho 3/jaxrs-ri/lib/jersey-media-jaxb.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Documents/GitHub/Eng.-Software-1/Trabalho 3/jaxrs-ri/lib/jersey-media-json-binding.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Documents/GitHub/Eng.-Software-1/Trabalho 3/jaxrs-ri/lib/jersey-media-sse.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Documents/GitHub/Eng.-Software-1/Trabalho 3/jaxrs-ri/lib/jersey-server.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

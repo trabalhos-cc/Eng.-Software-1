@@ -1,5 +1,8 @@
 package unioeste.geral.homebank.bo;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class PessoaFisica extends Pessoa{
 	
 	private CPF cpf;

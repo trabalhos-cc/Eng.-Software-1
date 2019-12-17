@@ -15,6 +15,10 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/glassfish4/glassfish/modules/javax.servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/glassfish4/glassfish/modules/javax.servlet-api.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

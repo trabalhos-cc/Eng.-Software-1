@@ -1,8 +1,11 @@
 package unioeste.geral.homebank.bo;
 
 import java.util.ArrayList;
-import java.sql.Date;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+import java.sql.Date;
+@XmlRootElement
 public class ContaBancaria {
 
 	private TipoConta tipo;

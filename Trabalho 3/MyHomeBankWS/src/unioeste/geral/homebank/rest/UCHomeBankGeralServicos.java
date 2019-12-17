@@ -20,7 +20,6 @@ import unioeste.geral.homebank.col.ColMovimentacao;
 
 @Path("restws")
 public class UCHomeBankGeralServicos {
-	@SuppressWarnings("unused")
 	@Context
 	private UriInfo context;
 	private Connection con;
@@ -39,12 +38,13 @@ public class UCHomeBankGeralServicos {
 	}
 
 	@GET
-	@Produces(MediaType.APPLICATION_XML)
-	@Path("ConsultarExtratoConta/{cons}/{doc}")
-	public ArrayList<String> consultarExtratoConta(@PathParam("cons")String consultado, @PathParam("doc")String docFav) throws ClienteException {
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("ConsultarExtratoConta/{consultado}/{docFav}")
+	public ArrayList<String> consultarExtratoConta(@PathParam("consultado")String consultado, @PathParam("docFav")String docFav) throws ClienteException {
 
 		ColCliente colC = new ColCliente(con);
-
+//		Gson g = new Gson();
+		
 		int idCli = colC.validar(consultado, docFav);
 
 		if(idCli != 0) {
@@ -70,9 +70,11 @@ public class UCHomeBankGeralServicos {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} 
-
 				movimentacoes.add(String.valueOf(cb.getSaldo()));
+				
+				
 				return movimentacoes;
+
 			}
 			else {
 				throw new ClienteException("Conta Bancária do Cliente não cadastrada");

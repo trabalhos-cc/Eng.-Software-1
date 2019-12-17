@@ -1,5 +1,8 @@
 package unioeste.geral.homebank.bo;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Sexo {
 	
 	private String Descricao;

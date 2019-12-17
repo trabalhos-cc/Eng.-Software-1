@@ -2,8 +2,10 @@ package unioeste.geral.homebank.bo;
 
 import java.util.ArrayList;
 
-import unioeste.geral.endereco.bo.EnderecoEspecifico;
+import javax.xml.bind.annotation.XmlRootElement;
 
+import unioeste.geral.endereco.bo.EnderecoEspecifico;
+@XmlRootElement
 public class Pessoa {
 	
 	private String nome;
